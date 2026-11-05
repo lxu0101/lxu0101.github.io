@@ -115,7 +115,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
 .kh.kh-2{grid-template-columns:repeat(2,1fr)}
 @media (max-width:760px){.kh,.kh.kh-2{grid-template-columns:1fr}}
 .svc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 20px}
-.svc-head,.svc-row{display:grid;grid-template-columns:140px 1fr 1fr 84px;gap:20px}
+.svc-head,.svc-row{display:grid;grid-template-columns:140px 1fr 84px;gap:20px}
 .svc-head .r,.svc-price{text-align:left;justify-self:start}
 .svc-head{padding:14px 0 10px;border-bottom:1px solid var(--line);font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--orange)}
 .svc-row{padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
@@ -125,14 +125,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
 .svc-cell{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
 .svc-cell p{font-size:13.5px;color:var(--muted)}
 .svc-cell p b{color:var(--ink);font-weight:700}
-.svc-cell.none p{color:var(--line)}
-.svc-who{display:none;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--orange)}
 @media (max-width:640px){
   .svc-head{display:none}
   .svc-row{grid-template-columns:1fr;gap:12px}
-  .svc-who{display:block}
-  .svc-cell.none{display:none}
-  .svc-row h3{order:-2}
+    .svc-row h3{order:-2}
   .svc-price{justify-self:start;order:-1}
 }
 /* price list */
@@ -306,11 +302,11 @@ footer{text-align:center;font-size:12px;color:var(--muted)}
       <p>统一按企业标准报价。精力有限，暂不提供免费咨询。</p>
     </div>
     <div class="svc">
-      <div class="svc-head"><span></span><span>企业</span><span>个人</span><span class="r">定价</span></div>
-      <div class="svc-row"><h3>单次咨询<small>30 分钟</small></h3><div class="svc-cell" data-who="企业"><span class="svc-who">企业</span><p>出海渠道、增长打法、产品方向，聚焦一个具体问题</p></div><div class="svc-cell" data-who="个人"><span class="svc-who">个人</span><p>初步现状诊断：理清要解决什么问题、从哪个环节切入，给出 planning；有具体问题就直接从它切入</p></div><div class="svc-price"><span class="amt">¥ 500</span></div></div>
-      <div class="svc-row"><h3>单次咨询<small>60 分钟</small></h3><div class="svc-cell" data-who="企业"><span class="svc-who">企业</span><p>完整诊断一个项目，会后附书面要点</p></div><div class="svc-cell" data-who="个人"><span class="svc-who">个人</span><p>推荐用来做模拟面试，也可以聊你想解决的其他问题</p></div><div class="svc-price"><span class="amt">¥ 800</span></div></div>
-      <div class="svc-row"><h3>产品 0→1 资料包</h3><div class="svc-cell" data-who="企业"><span class="svc-who">企业</span><p>需求洞察、MVP 定义、AI 开发流程、冷启动清单与模板</p></div><div class="svc-cell none" data-who="个人"><span class="svc-who">个人</span><p>—</p></div><div class="svc-price"><span class="amt">¥ 199</span></div></div>
-      <div class="svc-row"><h3>项目合作 / 陪跑</h3><div class="svc-cell" data-who="企业"><span class="svc-who">企业</span><p><b>企业项目合作</b>：出海 GTM、达人营销、增长陪跑，按项目沟通</p></div><div class="svc-cell" data-who="个人"><span class="svc-who">个人</span><p><b>求职陪跑</b>：从岗位判断、简历修改到模拟面试，全程陪你拿到 offer</p></div><div class="svc-price"><span class="amt">面议</span></div></div>
+      <div class="svc-head"><span></span><span>服务内容</span><span class="r">定价</span></div>
+      <div class="svc-row"><h3>单次咨询<small>30 分钟</small></h3><div class="svc-cell" data-who="企业"><p>出海渠道、增长打法、产品方向，聚焦一个具体问题</p></div><div class="svc-price"><span class="amt">¥ 500</span></div></div>
+      <div class="svc-row"><h3>单次咨询<small>60 分钟</small></h3><div class="svc-cell" data-who="企业"><p>完整诊断一个项目，会后附书面要点</p></div><div class="svc-price"><span class="amt">¥ 800</span></div></div>
+      <div class="svc-row"><h3>产品 0→1 资料包</h3><div class="svc-cell" data-who="企业"><p>需求洞察、MVP 定义、AI 开发流程、冷启动清单与模板</p></div><div class="svc-price"><span class="amt">¥ 199</span></div></div>
+      <div class="svc-row"><h3>企业项目合作</h3><div class="svc-cell" data-who="企业"><p>出海 GTM、达人营销、增长陪跑，按项目沟通</p></div><div class="svc-price"><span class="amt">面议</span></div></div>
     </div>
     <p class="price-foot">价格为初版建议，以微信沟通为准。</p>
   </section>
